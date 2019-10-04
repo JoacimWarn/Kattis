@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+#define SIZE 80
+
+void str_cat(char* s, char* t){while(*s++ = *t++);}
+
+int str_len(char* str){
+	
+	int i = 0;
+	
+	while(*str++){
+		
+		i++;
+		
+	}
+	
+	return i;
+	
+}
+
+void rats(char* original, char* reverse){
+	
+	while(*original){
+		
+		//printf("%d", *original);
+		
+		
+		
+		*original++;
+		
+	}
+	
+}
+
+int main(){
+	
+	char buffer[SIZE];
+	int p, loopNumber, c, i;
+	
+	scanf("%d", &p);
+	int k[p];
+	
+	loopNumber = i = 0;
+	do{
+		
+		scanf("%d\n", &k[loopNumber]);
+		
+		while((c = fgetc(stdin)) != '\n'){
+			
+			buffer[i++] = (c - '0');
+			buffer[i] = '\0';
+			
+		}
+		
+		i--;
+		//skicka till rats &buffer[i]
+		rats(&buffer[0], &buffer[i]);
+		i = 0;
+		
+		p--;
+		loopNumber++;
+		
+	}while(p > 0);
+	
+	return 0;
+	
+}
