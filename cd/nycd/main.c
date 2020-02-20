@@ -3,8 +3,8 @@
 
 //#define SIZE 8000000000
 
-#define SIZE      800000000
-#define HASHSIZE  100000001
+#define SIZE      40000000
+#define HASHSIZE  10000001
 
 int main(){
 	
